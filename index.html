@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/images/logo.svg" alt="Logo" />
+      <div class="menu" id="menu-open"></div>
+      <nav class="menu--items">
+        <ul>
+          <li><a class="link" href="#">Home</a></li>
+          <li><a class="link" href="#">New</a></li>
+          <li><a class="link" href="#">Popular</a></li>
+          <li><a class="link" href="#">Trending</a></li>
+          <li><a class="link" href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="image">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/images/image-web-3-desktop.jpg"
+          />
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3" />
+        </picture>
+      </div>
+      <h1 class="headline">The Bright Future of Web 3.0?</h1>
+      <div class="desc">
+        <p>
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <a href="#" class="read-more">Read more</a>
+      </div>
+      <div class="new-articles">
+        <h2 class="new">New</h2>
+        <article class="new-article">
+          <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <hr />
+        <article class="new-article">
+          <h3><a href="#">The Downsides of AI Artistry</a></h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <hr />
+        <article class="new-article">
+          <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </div>
+      <article class="articles art1">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" />
+        <div class="content">
+          <h2>01</h2>
+          <h3><a class="link" href="#">Reviving Retro PCs</a></h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+      <article class="articles art2">
+        <img src="./assets/images/image-top-laptops.jpg" alt="Top Laptops" />
+        <div class="content">
+          <h2>02</h2>
+          <h3><a class="link" href="#">Top 10 Laptops of 2022</a></h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+      <article class="articles art3">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming Growth" />
+        <div class="content">
+          <h2>03</h2>
+          <h3><a class="link" href="#">The Growth of Gaming</a></h3>
+          <p>How the pandemic has sparked fresh opportunities</p>
+        </div>
+      </article>
+    </main>
+    <div class="mobile-menu">
+      <div class="mobile-menu--content">
+        <div class="mobile-menu--header">
+          <div class="mobile-menu--close" id="menu-close"></div>
+        </div>
+        <div class="mobile-menu--items">
+            <ul>
+              <li><a class="link" href="#">Home</a></li>
+              <li><a class="link" href="#">New</a></li>
+              <li><a class="link" href="#">Popular</a></li>
+              <li><a class="link" href="#">Trending</a></li>
+              <li><a class="link" href="#">Categories</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://ali.js.org">Ali Bouhrouche</a>.
+    </div>
+    <script> 
+      document.getElementById('menu-open').addEventListener('click',function(){document.body.classList.toggle('menu--open',true)})
+      document.getElementById('menu-close').addEventListener('click',function(){document.body.classList.toggle('menu--open',false)})
+    </script>
+  </body>
+</html>
